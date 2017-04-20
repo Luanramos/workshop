@@ -1,0 +1,29 @@
+.gh-search-wrap {	
+	font: 14px $g-font-primary;
+	overflow: hidden;
+
+	input[type="search"],
+	input[type="text"] {
+		border: none;
+		font: 14px $g-font-primary;
+		height: 45px;
+	}
+
+	.label {
+		color: #fff;
+		margin-right: 20px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	&.gh-wrapper {
+		background: $g-color-primary;		
+
+		.gh-search {
+			align-items: center;
+			display: flex;
+		}
+	}
+}
+
+

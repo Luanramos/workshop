@@ -1,0 +1,710 @@
+/*!
+	Theme Name: Style Guide Ghost
+	Theme URI: https://github.com/guilhermessantos
+	Author: Guilherme Souza
+	Description:
+	Version: 1.0.0
+*/
+/* generated with grunt-sass-globbing */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+a,
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+input,
+textarea {
+  -webkit-appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'ghost-icomoon';
+  src: url("ghost/assets/fonts/ghost-icomoon.eot");
+  src: url("ghost/assets/fonts/ghost-icomoon.eot#iefix") format("embedded-opentype"), url("ghost/assets/fonts/ghost-icomoon.ttf") format("truetype"), url("ghost/assets/fonts/ghost-icomoon.woff") format("woff"), url("ghost/assets/fonts/ghost-icomoon.svg#ghost-icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.data-colors::before,
+.data-fonts::before {
+  display: none;
+}
+
+.data-colors::before {
+  content: '{"primary":{"base":"#ee8622","lighten":"#f2a051","darken":"#cd6d10"},"secondary":{"base":"#26abdc","lighten":"#52bce3","darken":"#1d8ab2"},"tertiary":{"base":"#4a4a4a","lighten":"#646464","darken":"#313131"},"text":{"base":"#858484","title":"#676767","link":"#ee8622"},"detail":{"base":"#e6e6e6","background":"#fafafa","disabled":"#eaeaea","border":"#e8e8e8"},"message":{"alert":"#FFD92E","error":"#fc6666","success":"#56e747"},"social":{"facebook":"#4367BD","twitter":"#00ACF0","google-plus":"#d13f1a","youtube":"#bb0000","linkedin":"#0073B4","whatsapp":"#4dc247","pinterest":"#FF0021"}}';
+}
+
+.data-fonts::before {
+  content: '{"primary":{"base":"arial","italic":false,"bold":"robotobold","bold-ex":false},"secondary":{"base":"Arial","italic":false,"bold":"Arial Black","bold-ex":false},"tertiary":{"base":"Trebuchet MS","italic":false,"bold":false,"bold-ex":false},"icon":{"base":"ghost-icomoon"}}';
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.2;
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.disabled.btn {
+  background: #eaeaea;
+  color: #b7b7b7;
+  cursor: default;
+}
+
+input:not([type="submit"]), select, textarea {
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  color: #858484;
+  font: 14px/1.2 arial;
+  height: 40px;
+  outline: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+input:focus:not([type="submit"]), select:focus, textarea:focus {
+  box-shadow: none;
+}
+
+[class^="icon-g-"],
+[class*=" icon-g-"] {
+  font-family: 'ghost-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* generated with grunt-sass-globbing */
+.btn {
+  background: #ee8622;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+a.btn {
+  height: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.field-error input,
+.field-error select,
+.field-error textarea {
+  border-color: #fc6666;
+}
+.field-error .field-error-text {
+  margin-top: 10px;
+  position: relative;
+}
+
+.field-error-text {
+  background: #fc6666;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+}
+.field-error-text::after {
+  border-color: transparent transparent #fc6666 transparent;
+  border-style: solid;
+  border-width: 5px;
+  bottom: 100%;
+  content: "";
+  left: 20px;
+  position: absolute;
+}
+
+.field-success input {
+  border-color: #56e747;
+}
+
+label {
+  color: #676767;
+  font-size: 11px;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+textarea {
+  height: auto;
+  padding: 10px;
+  resize: none;
+}
+
+.icon-g-android:before {
+  content: "\e900";
+}
+
+.icon-g-apple:before {
+  content: "\e901";
+}
+
+.icon-g-behance:before {
+  content: "\e902";
+}
+
+.icon-g-blackberry:before {
+  content: "\e903";
+}
+
+.icon-g-facebook:before {
+  content: "\e904";
+}
+
+.icon-g-flickr:before {
+  content: "\e905";
+}
+
+.icon-g-github:before {
+  content: "\e906";
+}
+
+.icon-g-google:before {
+  content: "\e907";
+}
+
+.icon-g-google-plus:before {
+  content: "\e908";
+}
+
+.icon-g-instagram:before {
+  content: "\e909";
+}
+
+.icon-g-linkedIn:before {
+  content: "\e90a";
+}
+
+.icon-g-magento:before {
+  content: "\e90b";
+}
+
+.icon-g-pinterest:before {
+  content: "\e90c";
+}
+
+.icon-g-skype:before {
+  content: "\e90d";
+}
+
+.icon-g-slack:before {
+  content: "\e90e";
+}
+
+.icon-g-snapchat:before {
+  content: "\e90f";
+}
+
+.icon-g-spotify:before {
+  content: "\e910";
+}
+
+.icon-g-tumblr:before {
+  content: "\e911";
+}
+
+.icon-g-twitter:before {
+  content: "\e912";
+}
+
+.icon-g-vimeo:before {
+  content: "\e913";
+}
+
+.icon-g-whatsapp:before {
+  content: "\e914";
+}
+
+.icon-g-windows-phone:before {
+  content: "\e915";
+}
+
+.icon-g-youtube:before {
+  content: "\e916";
+}
+
+.icon-g-arrow-bottom:before {
+  content: "\e928";
+}
+
+.icon-g-arrow-left:before {
+  content: "\e929";
+}
+
+.icon-g-arrow-right:before {
+  content: "\e92a";
+}
+
+.icon-g-arrow-top:before {
+  content: "\e92b";
+}
+
+.icon-g-hamburger:before {
+  content: "\e92e";
+}
+
+.icon-g-page:before {
+  content: "\e931";
+}
+
+.icon-g-search:before {
+  content: "\e933";
+}
+
+.icon-g-home:before {
+  content: "\e917";
+}
+
+.icon-g-newspaper:before {
+  content: "\e918";
+}
+
+.icon-g-image:before {
+  content: "\e919";
+}
+
+.icon-g-camera:before {
+  content: "\e91a";
+}
+
+.icon-g-file-zip:before {
+  content: "\e92c";
+}
+
+.icon-g-price-tag:before {
+  content: "\e935";
+}
+
+.icon-g-cart:before {
+  content: "\e93a";
+}
+
+.icon-g-phone:before {
+  content: "\e942";
+}
+
+.icon-g-location:before {
+  content: "\e947";
+}
+
+.icon-g-clock:before {
+  content: "\e94e";
+}
+
+.icon-g-bell:before {
+  content: "\e951";
+}
+
+.icon-g-bubble:before {
+  content: "\e96b";
+}
+
+.icon-g-user:before {
+  content: "\e971";
+}
+
+.icon-g-quotes-left:before {
+  content: "\e977";
+}
+
+.icon-g-quotes-right:before {
+  content: "\e978";
+}
+
+.icon-g-spinner:before {
+  content: "\e97e";
+}
+
+.icon-g-cog:before {
+  content: "\e994";
+}
+
+.icon-g-trophy:before {
+  content: "\e99e";
+}
+
+.icon-g-bin:before {
+  content: "\e9ac";
+}
+
+.icon-g-truck:before {
+  content: "\e9b0";
+}
+
+.icon-g-download:before {
+  content: "\e9c7";
+}
+
+.icon-g-link:before {
+  content: "\e9cb";
+}
+
+.icon-g-eye:before {
+  content: "\e9ce";
+}
+
+.icon-g-eye-blocked:before {
+  content: "\e9d1";
+}
+
+.icon-g-bookmark:before {
+  content: "\e9d2";
+}
+
+.icon-g-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-g-heart:before {
+  content: "\e9da";
+}
+
+.icon-g-cross:before {
+  content: "\ea0f";
+}
+
+.icon-g-checkmark:before {
+  content: "\ea10";
+}
+
+.icon-g-share2:before {
+  content: "\ea82";
+}
+
+blockquote {
+  border-left: 3px solid #e8e8e8;
+  padding: 20px 0 20px 50px;
+}
+
+hr {
+  background: #e8e8e8;
+  border: none;
+  height: 1px;
+}
+
+table {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  color: #858484;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+}
+table td,
+table th {
+  padding: 20px;
+}
+table tr {
+  border-bottom: 1px solid #e8e8e8;
+}
+table thead {
+  background: rgba(232, 232, 232, 0.2);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* generated with grunt-sass-globbing */
+.pagination-wrap {
+  clear: both;
+  text-align: center;
+}
+
+ul.page-numbers {
+  background: #fff;
+  border-radius: 2px;
+  color: #858484;
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+ul.page-numbers a {
+  color: inherit;
+  text-decoration: none;
+}
+ul.page-numbers li {
+  display: inline-block;
+}
+ul.page-numbers li:first-child .page-numbers {
+  border-left: 1px solid #e6e6e6;
+}
+
+.page-numbers .page-numbers {
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  display: none;
+  font: 14px/30px arial;
+  height: 30px;
+  padding: 0 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.page-numbers .page-numbers.current, .page-numbers .page-numbers.current:hover {
+  background: #ee8622;
+  border-color: #ee8622;
+  color: #fff;
+  cursor: default;
+  margin-left: -1px;
+}
+.page-numbers .page-numbers.current, .page-numbers .page-numbers.prev, .page-numbers .page-numbers.next {
+  display: block;
+}
+.page-numbers .page-numbers:hover {
+  background: whitesmoke;
+}
+@media (min-width: 380px) {
+  .page-numbers .page-numbers {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .page-numbers .page-numbers {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+}
+
+.the-content {
+  color: #858484;
+  font-size: 0.9375em;
+  line-height: 1.6;
+}
+.the-content p,
+.the-content ol,
+.the-content ul,
+.the-content hr {
+  margin-bottom: 15px;
+}
+
+.the-content strong,
+.the-content b {
+  font-weight: bold;
+}
+
+.the-content em,
+.the-content i {
+  font-style: italic;
+}
+
+.the-content a {
+  color: #ee8622;
+  -webkit-transition: .2s color;
+  transition: .2s color;
+}
+.the-content a:hover {
+  color: #f5ba81;
+}
+
+.the-content ol,
+.the-content ul {
+  padding-left: 15px;
+}
+.the-content ol li,
+.the-content ol ul li:first-child,
+.the-content ol ol li:first-child,
+.the-content ul li,
+.the-content ul ul li:first-child,
+.the-content ul ol li:first-child {
+  margin-top: 5px;
+}
+.the-content ol li:first-child,
+.the-content ul li:first-child {
+  margin-top: 0;
+}
+
+.the-content ul {
+  list-style-type: disc;
+}
+
+.the-content ol {
+  list-style-type: decimal;
+}
+
+.the-content h1,
+.the-content h2,
+.the-content h3,
+.the-content h4,
+.the-content h5,
+.the-content h6 {
+  color: #676767;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.the-content h1 {
+  font-size: 1.875em;
+}
+.the-content h2 {
+  font-size: 1.75em;
+}
+.the-content h3 {
+  font-size: 1.625em;
+}
+.the-content h4 {
+  font-size: 1.5em;
+}
+.the-content h5,
+.the-content h6 {
+  font-size: 1.375em;
+}
+
+/* generated with grunt-sass-globbing */
+/* generated with grunt-sass-globbing */
+body {
+  font-family: arial;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* generated with grunt-sass-globbing */
+
+/*# sourceMappingURL=style.css.map */

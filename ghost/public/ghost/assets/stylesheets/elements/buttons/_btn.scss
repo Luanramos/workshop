@@ -1,0 +1,13 @@
+.btn {
+	@extend %btn;
+	background: color( primary );
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+}
+
+a.btn {
+	height: auto;
+	padding-bottom: 12px;
+	padding-top: 12px;
+}

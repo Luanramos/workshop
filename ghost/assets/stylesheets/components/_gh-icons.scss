@@ -1,0 +1,37 @@
+.gh-icons ul {
+	border-color: $g-color-text;
+	color: $g-color-text;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: -5px;
+
+	@media ( min-width: $g-container ) {
+		justify-content: left;
+	}
+}
+
+.gh-icons i {
+	border: 1px solid $g-color-line;
+	border-radius: 3px;
+	cursor: pointer;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	margin: 4.7px;
+	position: relative;
+	text-align: center;
+	transition: .3s;
+	width: 50px;
+
+	&:hover {
+		background: $g-color-line;
+	}
+
+	&.active,
+	&.active:hover {
+		background: #fff;
+		border-color: $g-color-tertiary;
+		color: $g-color-tertiary;
+	}
+}
