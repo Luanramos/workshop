@@ -8,6 +8,6 @@ get_header();
 ?>
 
 <?php get_sidebar(); ?>
-<!-- Put the html code for index here -->
+
 
 <?php get_footer(); ?>
