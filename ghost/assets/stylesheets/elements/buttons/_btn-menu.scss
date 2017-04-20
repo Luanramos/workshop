@@ -1,0 +1,30 @@
+.btn-menu {
+	position: relative;
+	top: -6px;
+
+	&::after,
+	&::before {
+		content: " ";
+		position: absolute;
+	}
+
+	&::after {
+		bottom: 6px;
+	}
+
+	&::before {
+		top: 6px;
+	}
+
+}
+
+.btn-menu,
+.btn-menu::after,
+.btn-menu::before {
+	background: color( primary );
+	display: inline-block;
+	font-size: 0;
+	height: 2px;
+	transition: .2s ease-in-out;
+	width: 25px;
+}

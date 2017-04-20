@@ -1,8 +1,8 @@
 module.exports = {
 	dist: [
-		'concat:dist', 'sass:dist'
+		'concat', 'imagemin'
 	],
 	dev: [
-		'concat:dev', 'sass:dev'
+		'concat', 'assemble'
 	]
 };

@@ -1,7 +1,7 @@
 module.exports =  {
 	styles: {
 		files: ['<%= paths.style %>/**/*.scss'],
-		tasks: ['sass:dev']
+		tasks: ['sass_globbing', 'sass:dev', 'postcss']
 	},
 	templates: {
 		files: '<%= riot.dist.src %>',
@@ -10,5 +10,9 @@ module.exports =  {
 	scripts: {
 		files: '<%= concat.dev.src %>',
 		tasks: ['jshint', 'concat:dev']
+	},
+	assemble: {
+		files: ['page/**/*.hbs', 'components/**/*.html'],
+		tasks: ['assemble']
 	}
 };

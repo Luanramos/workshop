@@ -1,21 +1,17 @@
 <?php
-// Avoid that files are directly loaded
-if ( ! function_exists( 'add_action' ) ) :
-	exit(0);
-endif;
 
-use Apiki\Theme\Menu;
-
-	wp_nav_menu(
-		array(
-			'theme_location' => Menu::FOOTER,
-			'container'      => '',
-			'menu_class'     => 'menu',
-			'fallback_cb'    => '',
-		)
-	);
-
-	wp_footer();
+if ( ! function_exists( 'add_action' ) ) {
+	exit( 0 );
+}
 ?>
-	</body>
+	<ul class="navigation navigation-bar">
+		<li>
+			<img src="<?php echo get_template_directory_uri(); ?>/ghost/assets/images/realthors.svg" width="45" />
+		</li>
+		<li class="hamburger-wrapper"><span class="btn-menu"></span></li>
+		<li><i class="icon-g-search"></i></li>
+	</ul>
+
+	<?php wp_footer(); ?>
+</body>
 </html>

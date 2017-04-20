@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dedf0a19a1b3562c15aa9ef6f6f0a9e3",
+    "content-hash": "31497c3552429a81155b6d2dd495d599",
     "packages": [
         {
             "name": "tgmpa/tgm-plugin-activation",
@@ -59,7 +59,7 @@
                 "theme",
                 "wordpress"
             ],
-            "time": "2016-05-19 15:46:51"
+            "time": "2016-05-19T15:46:51+00:00"
         }
     ],
     "packages-dev": [],

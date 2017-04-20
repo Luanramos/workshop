@@ -1,12 +1,11 @@
 <?php
-// Avoid that files are directly loaded
-if ( ! function_exists( 'add_action' ) ) :
-	exit(0);
-endif;
 
-use Apiki\Theme\Sidebar;
+if ( ! function_exists( 'add_action' ) ) {
+	exit( 0 );
+}
+
+use PL\Theme\Model\Sidebar;
 ?>
-
 <div class="sidebar">
 	<?php dynamic_sidebar( Sidebar::HOME ); ?>
 </div>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'ghost-icomoon';
+  src:  url('ghost/assets/fonts/ghost-icomoon.eot?e3kwgd');
+  src:  url('ghost/assets/fonts/ghost-icomoon.eot?e3kwgd#iefix') format('embedded-opentype'),
+        url('ghost/assets/fonts/ghost-icomoon.ttf?e3kwgd') format('truetype'),
+        url('ghost/assets/fonts/ghost-icomoon.woff?e3kwgd') format('woff'),
+        url('ghost/assets/fonts/ghost-icomoon.svg?e3kwgd#ghost-icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-g-"],
+[class*=" icon-g-"] {
+	@extend %icon;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('ghost/assets/fonts/font-primary/raleway-light.woff2') format('woff2'),
+         url('ghost/assets/fonts/font-primary/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('ghost/assets/fonts/font-primary/raleway-regular.woff2') format('woff2'),
+         url('ghost/assets/fonts/font-primary/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('ghost/assets/fonts/font-primary/raleway-medium.woff2') format('woff2'),
+         url('ghost/assets/fonts/font-primary/raleway-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('ghost/assets/fonts/font-primary/raleway-semibold.woff2') format('woff2'),
+         url('ghost/assets/fonts/font-primary/raleway-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('ghost/assets/fonts/font-primary/raleway-bold.woff2') format('woff2'),
+         url('ghost/assets/fonts/font-primary/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
