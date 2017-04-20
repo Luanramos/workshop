@@ -1,0 +1,14 @@
+.btn {
+	@extend %btn;
+	background: color( primary );
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	font-family: font( primary, bold );
+}
+
+a.btn {
+	height: auto;
+	padding-bottom: 12px;
+	padding-top: 14px;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "paulofr/place-to-live-theme",
+    "description": "Real Estate theme developed.",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0",
+    "require": {
+        "tgmpa/tgm-plugin-activation": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "PL\\Theme\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+$fonts : (	
+	primary : (
+		light     : "ralewaylight",
+		base      : "ralewayregular",
+		medium    : "ralewaymedium",
+		semi-bold : "ralewaysemibold",
+		bold      : "ralewaybold"
+	),
+
+	secondary : (
+		base 	: "Arial",
+		italic 	: false,
+		bold 	: "Arial Black",
+		bold-ex : false
+	),
+
+	tertiary : (
+		base 	: "Trebuchet MS",
+		italic 	: false,
+		bold 	: false,
+		bold-ex : false
+	),
+
+	icon : (
+		base 	: "ghost-icomoon"
+	),
+);

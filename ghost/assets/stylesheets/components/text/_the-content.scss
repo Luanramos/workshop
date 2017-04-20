@@ -1,0 +1,89 @@
+.the-content {
+	color: color( text );
+	font-size: font-size( text );
+	line-height: 1.6;
+
+	p,
+	ol,
+	ul,
+	hr {
+		margin-bottom: 15px;
+	}
+}
+
+.the-content strong,
+.the-content b {
+	font-weight: bold;
+}
+
+.the-content em,
+.the-content i {
+	font-style: italic;
+}
+
+.the-content a {
+	color: color( primary );
+	transition: .2s color;
+
+	&:hover {
+		color: lighten( color( primary ), 20% )
+	}
+}
+
+.the-content ol,
+.the-content ul {
+	padding-left: 15px;
+
+	li,
+	ul li:first-child,
+	ol li:first-child {
+		margin-top: 5px;
+	}
+	
+	li:first-child {
+		margin-top: 0;
+	}
+}
+
+.the-content ul {
+	list-style-type: disc;
+}
+
+.the-content ol {
+	list-style-type: decimal;
+}
+
+.the-content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: color( text, title );
+		font-weight: bold;
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+
+	h1 {
+		font-size: font-size( h1 );
+	}
+
+	h2 {
+		font-size: font-size( h2 );
+	}
+
+	h3 {
+		font-size: font-size( h3 );
+	}
+
+	h4 {
+		font-size: font-size( h4 );
+	}
+
+	h5,
+	h6 {
+		font-size: font-size( h5 );
+	}
+}

@@ -1,0 +1,9 @@
+.btn.secondary {
+	background: color( secondary );
+	color: #fff;
+	transition: .3s;
+
+	&:hover {
+		background: darken( color( secondary ), 10% );
+	}
+}

@@ -1,0 +1,21 @@
+body {
+	font-family: font( primary );
+
+	&.admin-bar, {
+		margin-top: 32px;
+
+		#header {
+			top: 32px;
+		}
+	}
+
+	@include resp-max( desktop ) {
+		&.admin-bar, {
+			margin-top: 0;
+
+			#header {
+				top: 0;
+			}
+		}
+	}
+}

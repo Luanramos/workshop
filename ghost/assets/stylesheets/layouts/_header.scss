@@ -1,0 +1,32 @@
+#header {
+	background: #fff;
+	box-shadow: 0px 1px 15px -7px rgba(0, 0, 0, .5);
+}
+
+#header {
+	&.active-menu .navigation-wrap {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@include resp-max( container ) {
+	#header .container {
+		align-items: center;
+		display: flex;
+		height: 35px;
+		justify-content: space-between;
+	}
+}
+
+@include resp( container ) {
+	#header {
+		height: 60px;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+
+		.container { position: relative; }
+	}
+}

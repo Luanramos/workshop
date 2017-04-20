@@ -1,0 +1,9 @@
+.btn.tertiary {
+	background: color( tertiary );
+	color: #fff;
+	transition: .3s;
+
+	&:hover {
+		background: darken( color( tertiary ), 10% );
+	}
+}
